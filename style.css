@@ -1,0 +1,210 @@
+@charset "UTG-8";
+
+body {
+    padding: 80px 0 0 0;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+            background-size: 400% 400%;
+            -webkit-animation: Gradient 15s ease infinite;
+            -moz-animation: Gradient 15s ease infinite;
+            animation: Gradient 15s ease infinite;
+        }
+
+        @-webkit-keyframes Gradient {
+            0% {background-position: 0% 50%}
+            50% {background-position: 100% 50%}
+            100% {background-position: 0% 50%}
+        }
+
+        @-moz-keyframes Gradient {
+            0% {background-position: 0% 50%}
+            50% {background-position: 100% 50%}
+            100% {background-position: 0% 50%}
+        }
+
+        @keyframes Gradient {
+            0% {background-position: 0% 50%}
+            50% {background-position: 100% 50%}
+            100% {background-position: 0% 50%}
+        }
+
+body,
+input,
+button {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header {
+    width: 100%;
+    height: 80px;
+
+    position: fixed;
+    padding:35px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+}
+
+
+
+header input {
+    width: 100%;
+    height: 50px;
+    float: left;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    text-indent: 16px;
+    padding: 0 60px 0 0;
+    border-radius: 5px 25px 25px 5px;
+    background: black;
+    opacity: 0.5;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+header input::-webkit-input-placeholder {
+    color: white;
+}
+
+header input::-moz-input-placeholder {
+    color: white;
+}
+
+header input::-ms-input-placeholder {
+    color: white;
+}
+
+header button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    z-index: 2;
+    border-radius: 25px;
+    background: white;
+    opacity: 0.9;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+
+header button svg {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -8px 0 0 -8px;
+    
+}
+
+header button svg .fill {
+    fill: turquoise;
+}
+
+.container {
+    width: 100%;
+    float: left;
+    padding: 35px;
+}
+
+ul.todo {
+    width: 100%;
+    float: left;
+}
+
+ul.todo li {
+    width: 100%;
+    min-height: 50px;
+    float: left;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    position: relative;
+    background: white;
+    opacity: 0.85;
+    margin: 0 0 10px 0;
+    padding: 15px 100px 15px 16px;
+    border-radius: 5px;
+    
+}
+
+ul.todo li:last-of-type {
+    margin: 0;
+}
+
+ul.todo li .buttons {
+    width: 55x;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+ul.todo li .buttons button {
+    width: 50px;
+    height: 50px;
+    float: left;
+    background: none;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+
+ul.todo li .buttons button svg {
+    width: 22px;
+    height; 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -11px 0 0 -11px;
+    
+}
+
+
+ul.todo li .buttons button svg .fill {
+    transition:fill 0.2s ease;
+}
+
+ul.todo li .buttons button.remove svg .fill {
+    fill: #c0cecb;
+}
+
+ul.todo li .buttons button.remove:hover svg .fill {
+    fill: #e85656;
+}
+
+
+
+
+
+
+
+
+
+
+
